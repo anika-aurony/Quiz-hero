@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            padding: 30px;
+
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,10 +31,19 @@
     <p>
         Local storage, session storage and cookies are used to store data in the window. Main difference between local storage and session storage is session storage data is cleared when tab or browser is closed whereas local storage data remains in the browser even if window/ tab is closed. That is when we close the tab or browser session is expired and also session storage is expired but local storage data donot expire evenif session ended or browser is closed. Cookies are small text files used to store user information on the user's computer. Sessions are more secured compared to cookies, as they save data in encrypted form. Cookies are not secure, as data is stored in a text file, and if any unauthorized user gets access to our system, he can temper the data. Cookies help website remember information about your visit, which can both make it easier to visit the site again and make the site more useful to you.The storage capacity of local storage is 5MB-10MB whereas session storage capacity is 5MB.
     </p>
-    <h3>What is eventloop and How it work?</h3>
+    <h3>3. What is eventloop and How it work?</h3>
     <p>
         The event loop allows code to run asynchronously on the javascript engines. 
         Javascript is a single-threaded programming language that means it can do only one work at a time. When javascript run to execute command serially it maintain two things, stack and queue. Stack maintain the order in LIFO. For example, if we call a function inside another function then it will be maintain by stack. First it will execute the function that was call by another function, then the main function. When stack complete its task then it take new task from the queue. Queue maintain the instruction sequence also asynchronous task sequence. Queue maintain the order by FIFO. Javascript run this process in a loop which is own as eventloop. 
+    </p>
+    <h3>4. Work of quizTimer</h3>
+    <p>
+        When start quiz is clicked quizTimer is called without any parameter so it starts the timer. And when submit button is pressed it again call the quizTimer with parameter true that means timer is dismiss so timer stop by clearInterval. In timer using setInterval time is calculated. Then count is displayed in id count
+    </p>
+    <h3>5. Work of chooseQuiz</h3>
+    <p>
+        chooseQuiz is call in display Quiz Options. chooseQuiz function is used to show the chosen answer and then call the display answers. When user select any answer it is displayed in the right side.
+
     </p>
 </body>
 
